@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/boh6yqk.css">
+  <script src="https://kit.fontawesome.com/bc4059b6be.js" crossorigin="anonymous"></script>
+  <script src="./script.js" defer></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="heading-button-countdown" id="headingButtonCountdown">
+    <p class="heading">Memory Game</p>
+    <button id="startButton" class="message-button">Start</button>
+    <div class="timer-box" id="timerBox">
+      <p id="countDown" class="count-down">7</p>
+    </div>
+    <button class="message-button" id="resetButton">Reset</button>
+  </section>
+  <section class="memory-game" id="memoryGame">
+    <div class="card" data-card="king" data-number="1">
+      <img src="./images/clubs_king.svg" class="front-face" alt="">
+      <img src="./images/joker_red.svg" class="back-face" alt="">
+    </div>
+    <div class="card" data-card="king" data-number="2">
+      <img src="./images/clubs_king.svg" class="front-face" alt="">
+      <img src="./images/joker_red.svg" class="back-face" alt="">
+    </div>
+    <div class="card" data-card="queen" data-number="1">
+      <img src="./images/clubs_queen.svg" class="front-face" alt="">
+      <img src="./images/joker_red.svg" class="back-face" alt="">
+    </div>
+    <div class="card" data-card="queen" data-number="2">
+      <img src="./images/clubs_queen.svg" class="front-face" alt="">
+      <img src="./images/joker_red.svg" class="back-face" alt="">
+    </div>
+    <div class="card" data-card="jack" data-number="1">
+      <img src="./images/clubs_jack.svg" class="front-face" alt="">
+      <img src="./images/joker_red.svg" class="back-face" alt="">
+    </div>
+    <div class="card" data-card="jack" data-number="2">
+      <img src="./images/clubs_jack.svg" class="front-face" alt="">
+      <img src="./images/joker_red.svg" class="back-face" alt="">
+    </div>
+    <div class="card" data-card="10" data-number="1">
+      <img src="./images/clubs_10.svg" class="front-face" alt="">
+      <img src="./images/joker_red.svg" class="back-face" alt="">
+    </div>
+    <div class="card" data-card="10" data-number="2">
+      <img src="./images/clubs_10.svg" class="front-face" alt="">
+      <img src="./images/joker_red.svg" class="back-face" alt="">
+    </div>
+    <div class="card" data-card="9" data-number="1">
+      <img src="./images/clubs_9.svg" class="front-face" alt="">
+      <img src="./images/joker_red.svg" class="back-face" alt="">
+    </div>
+    <div class="card" data-card="9" data-number="2">
+      <img src="./images/clubs_9.svg" class="front-face" alt="">
+      <img src="./images/joker_red.svg" class="back-face" alt="">
+    </div>
+    <div class="card" data-card="8" data-number="1">
+      <img src="./images/clubs_8.svg" class="front-face" alt="">
+      <img src="./images/joker_red.svg" class="back-face" alt="">
+    </div>
+    <div class="card" data-card="8" data-number="2">
+      <img src="./images/clubs_8.svg" class="front-face" alt="">
+      <img src="./images/joker_red.svg" class="back-face" alt="">
+    </div>
+    <div class="card" data-card="7" data-number="1">
+      <img src="./images/clubs_7.svg" class="front-face" alt="">
+      <img src="./images/joker_red.svg" class="back-face" alt="">
+    </div>
+    <div class="card" data-card="7" data-number="2">
+      <img src="./images/clubs_7.svg" class="front-face" alt="">
+      <img src="./images/joker_red.svg" class="back-face" alt="">
+    </div>
+    <div class="card" data-card="ace" data-number="1">
+      <img src="./images/clubs_ace.svg" class="front-face" alt="">
+      <img src="./images/joker_red.svg" class="back-face" alt="">
+    </div>
+    <div class="card" data-card="ace" data-number="2">
+      <img src="./images/clubs_ace.svg" class="front-face" alt="">
+      <img src="./images/joker_red.svg" class="back-face" alt="">
+    </div>
+  </section>
+  <div class="message-box" id="messageBox">
+    <p class="message" id="message"></p>
+    <button class="message-button" id="messageButton">Close</button>
+  </div>
+</body>
+
+</html>

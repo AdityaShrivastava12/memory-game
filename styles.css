@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  font-family: "sniglet";
+  background-image: url("./images/istockphoto-1206505233-612x612.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heading {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.start-button {
+  font-size: 3rem;
+  padding: 0.25em 0.8em;
+  font-family: "sniglet";
+}
+
+.count-down {
+  color: white;
+  font-size: 2rem;
+}
+
+.timer-box {
+  height: 70px;
+  width: 70px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-button-countdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: transparent;
+}
+
+.memory-game {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 30px;
+  background: transparent;
+  padding-right: 30px;
+  padding-left: 30px;
+  perspective: 1000px;
+}
+
+.card {
+  height: 140px;
+  width: 110px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.front-face,
+.back-face {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+.message-box {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  color: white;
+  font-size: 4rem;
+}
+
+.message-button {
+  font-family: "sniglet";
+  font-size: 3rem;
+  color: white;
+  background-color: black;
+  padding: 0.25em 0.5em;
+  border: none;
+  border: 1px solid white;
+}
+
+.message-button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.show {
+  display: flex;
+}

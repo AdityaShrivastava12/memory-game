@@ -30,12 +30,13 @@ function startCountDown() {
   }
 }
 
-(function shuffleCards() {
+function shuffleCards() {
   cards.forEach((card) => {
     let randomPosition = Math.floor(Math.random() * 17);
     card.style.order = randomPosition;
   })
-})();
+};
+shuffleCards();
 
 function showCards(card) {
   card.classList.add('flip');

@@ -111,6 +111,7 @@ function reset() {
     card.addEventListener('click', flip);
     lockBoard = true;
   })
+  shuffleCards();
 }
 
 function showMessage() {
